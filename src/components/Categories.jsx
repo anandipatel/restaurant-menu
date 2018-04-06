@@ -17,7 +17,7 @@ class Categories extends Component {
         })
     }
     render() {
-        return <div>
+        return <div style={{display: 'flex'}}>
             Menu Categories
             <br />
             {this.state.loading ? 'Loading...' :
