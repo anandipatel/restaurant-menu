@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch, Link } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 import Home from './Home'
 import Categories from './Categories'
 
@@ -11,14 +11,8 @@ class App extends Component {
             <Link to='/categories'><button>Categories</button></Link>
             <br />
             <br />
-            <Switch>
-                <Route path={'/'} exact={'true'} render={(props) => (
-                    <Home {...props} />
-                )} />
-                <Route path={'/categories'} exact={true} render={(props) => (
-                    <Categories {...props} />
-                )} />
-            </Switch>
+            <Route path={'/'} exact={'true'} component={Home} />
+            <Route path={'/categories'} component={Categories} />
         </div>
         )
     }
