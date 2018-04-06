@@ -2,6 +2,7 @@ import React from 'react'
 
 const Home = (props) => {
     return <div>
+
         <h3>LOCATION &amp; HOURS</h3>
         1067 N San Antonio Rd
         Los Altos, CA 94022
